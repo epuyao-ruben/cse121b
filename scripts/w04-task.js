@@ -9,18 +9,36 @@ let myProfile = {
         alt: "My Profile Picture"
     },
     favoriteFoods: ['Pizza', 'Hotdog', 'Sushi', 'Pasta', 'Steak', 'Salad', 'Fruit', 'Burguers'],
-    hobbies: ['Reading', 'Go to Gym', 'Play Videogames', 'Watch Series']
+    hobbies: ['Reading', 'Go to Gym', 'Play Videogames', 'Watch Series'],
+    placesLived : []
 }
 
 
 
 
 /* Populate Profile Object with placesLive objects */
-// myProfile.placesLived.push(
-//     {
-//         place : 'Osorno',
-//         length : '13 years'
-// })
+myProfile.placesLived.push(
+    {
+        place : 'Osorno, X Region, Chile',
+        length : '13 years'
+    },
+    {
+        place : "Castro, X Region, Chile",
+        length : "6 years"
+    },
+    {
+        place : "Quilpue, V Region, Chile",
+        length : "6 years"
+    },
+    {
+        place : "Santiago, Dominican Republic",
+        length : "2 years"
+    },
+    {
+        place : "Limache, V Region, Chile",
+        length : "9 years"
+    }
+    )
 
 
 
@@ -28,6 +46,7 @@ let myProfile = {
 
 /* Name */
 document.querySelector('#name').textContent = myProfile.name;
+
 /* Photo with attributes */
 photoElement.src = myProfile.photo.src;
 photoElement.alt = myProfile.photo.alt;
@@ -41,8 +60,20 @@ myProfile.favoriteFoods.forEach(item => {
 )
 
 /* Hobbies List */
-
-
+myProfile.hobbies.forEach(item => {
+    let li = document.createElement("li");
+    li.textContent = item;
+    document.querySelector("#hobbies").appendChild(li);
+}
+)
 /* Places Lived DataList */
+myProfile.placesLived.forEach(placesLived => {
+    let dt = document.createElement("dt");
+    dt.textContent = placesLived.place;
+    let dd = document.createElement("dd");
+    dd.textContent = placesLived.length;
 
+    document.querySelector("#places-lived").appendChild(dt);
+    document.querySelector("#places-lived").appendChild(dd);
+})
 
