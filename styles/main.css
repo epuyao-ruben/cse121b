@@ -60,6 +60,17 @@ nav ul li a:hover {
     color: black;
 }
 
+header {
+    margin-top: 100px;
+    text-align: center;
+    margin: 300px auto;
+    background-color: rgb(138, 135, 135);
+    height: auto;
+    width: 80%;
+    border-radius: 16px;
+    padding: 15px;
+}
+
 h1,
 h2 {
     text-align: center;
@@ -78,7 +89,7 @@ h2 {
     font-size: 1.5rem;
     color: navy;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 75px;
 }
 
 h3 {
@@ -88,6 +99,73 @@ h3 {
 
 header {
     margin-top: 70px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgb(138, 135, 135);
+    height: auto;
+    width: 80%;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.header button {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    margin: 10px auto 0px;
+    border-radius: 10px;
+}
+
+#nameProduct {
+    display: block;
+    margin: 0 auto;
+    /* Margen automático a la izquierda y derecha para centrar el elemento */
+    text-align: left;
+    /* Alinear el texto a la izquierda dentro del select */
+}
+
+.listProducts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 15px 10px 48px;
+    border-radius: 16px;
+    background-color: white;
+    width: 80%;
+    height: 600px;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.listProducts h2 {
+    text-align: center;
+}
+
+#tableProducts {
+    word-break: break-all;
+    overflow: auto;
+}
+
+td {
+    text-align: center;
+}
+
+.totalDiv {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    background: #C4C4C4;
+    width: 40%;
+    padding: 1rem;
+}
+
+#clearall {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
 }
 
 picture {

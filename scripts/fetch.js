@@ -1,7 +1,7 @@
 // fetch.js
-const url = "https://pokeapi.co/api/v2/pokemon/ditto";
-const urlList = "https://pokeapi.co/api/v2/pokemon";
-let results = null;
+const url = "https://pokeapi.co/api/v2/pokemon/ditto";   //creo variable url para asignar los datos de un solo pokemon, que es el que voy a usar
+const urlList = "https://pokeapi.co/api/v2/pokemon";     //otra variable que almacena el listado de pokemon
+let results = null;     //creo un variable vacia para modificar mas adelante
 
 async function getPokemon(url) {
   const response = await fetch(url);

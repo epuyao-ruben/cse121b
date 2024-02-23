@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Lista de Compras</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html" class="active">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="header">
+            <h2>Shopping List</h2>
+            <select id="nameProduct" type="text" placeholder="Product Name:">
+            </select>
+            <button id="addProduct" type="submit">Add Product</button>
+        </div>
+        <div class="listProducts">
+            <h2>Products</h2>
+            <hr>
+            <table id="tableProducts">
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+            <div class="totalDiv"><span>Total: US$</span><span id="result">0.00</span></div>
+            <div id="clearall"><i data-feather="trash-2"></i></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy;<span id="year"></span> | Week 07 - Project | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/project.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
